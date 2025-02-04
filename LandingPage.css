@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: black 0px 0px 2px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.right-side{
+    display: flex;
+}
+
+.right-side p{
+    font-size: 20px;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.left-buttons{
+    gap:10px 
+}
+
+nav button{
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+ 
+}
+.logo{
+    height: 30px;
+
+}
