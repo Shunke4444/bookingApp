@@ -1,15 +1,17 @@
-*{
+/* Existing CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFBFC   ;
+    overflow-x: hidden;
 }
 
-header{
+header {
     background-color: #ffffff;
     width: 100vw;
     height: 4rem;
@@ -20,28 +22,28 @@ header{
     box-shadow: black 0px 0px 2px;
 }
 
-.left-side{
+.left-side {
     display: flex;
 }
 
-.right-side{
+.right-side {
     display: flex;
 }
 
-.right-side p{
+.right-side p {
     font-size: 20px;
 }
 
-nav a{
+nav a {
     color: #000000;
     text-decoration: none;
 }
 
-.left-buttons{
-    gap:10px 
+.left-buttons {
+    gap: 10px;
 }
 
-nav button{
+nav button {
     background: none;
     border: none;
     padding: 5px 10px;
@@ -49,11 +51,96 @@ nav button{
     cursor: pointer;
 }
 
-.center{
+.center {
     display: flex;
- 
 }
-.logo{
-    height: 30px;
 
+.logo {
+    height: 30px;
+}
+
+.hero {
+    z-index: 1;
+    margin: 0;
+    width: 100vw;
+    height: 80vh;
+    background-image: url('/assets/PlaneBG.jfif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 8rem;
+    position: relative;
+}
+
+.hero::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust this to control the width of the fade */
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(197, 126, 68, 0.4), /* Start with a darker opacity */
+        rgba(248, 202, 159, 0)   /* Fade to fully transparent */
+    );
+    pointer-events: none; /* Ensure it doesn't interfere with other elements */
+}
+
+.hero div {
+    z-index: 3;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+/* Updated CSS for the search section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 10px;
+    height: 10rem;
+    width: 80%; /* Adjust width as needed */
+    background-color: #ffffff;
+    margin-top: -5rem; /* Adjust this to overlap or position the search section */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.search h1{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.another-section {
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 2rem; /* Add spacing between the search and this section */
 }

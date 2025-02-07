@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Mogmog</title>
     <link rel="stylesheet" href="LandingPage.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/5756001ff6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,10 +42,31 @@
                 </button>
             </nav>
         </header>
-
         <main>
-            <img src="" alt="">
-        </main>
+    <section class="hero">
+        <div>
+            <h1>Make your Travel<br>wishlist, we'll do<br>the rest</h1>
+            <p>Special to suit your plan</p>
+        </div>
+    </section>
+
+
+        <form action="post" class="search">
+            <h1>Where are you flying?</h1>
+        </form>
+
+    <section class="another-section">
+        <!-- Content for the new section goes here -->
+        <h2>Another Section</h2>
+        <p>This is another section below the search.</p>
+    </section>
+</main>
+
+        <?php
+            echo '<script>';
+            echo 'console.log("Hello World")';
+            echo '</script>';   
+        ?>
 </body>
 
 </html>
